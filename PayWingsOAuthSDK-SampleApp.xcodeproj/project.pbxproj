@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B1C05F928EB5E8F003F15BE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B1C05F828EB5E8F003F15BE /* Settings.bundle */; };
+		3B918C8628EB5419004A6704 /* ConfirmPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B918C7628EB5418004A6704 /* ConfirmPhoneNumberViewController.swift */; };
+		3B918C8728EB5419004A6704 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B918C7728EB5418004A6704 /* ViewController.swift */; };
+		3B918C8828EB5419004A6704 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B918C7828EB5418004A6704 /* EmailViewController.swift */; };
+		3B918C8928EB5419004A6704 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B918C7928EB5418004A6704 /* AppData.swift */; };
+		3B918C8A28EB5419004A6704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B918C7A28EB5418004A6704 /* Assets.xcassets */; };
+		3B918C8B28EB5419004A6704 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B918C7B28EB5418004A6704 /* KeychainService.swift */; };
+		3B918C8C28EB5419004A6704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B918C7C28EB5418004A6704 /* LaunchScreen.storyboard */; };
+		3B918C8D28EB5419004A6704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B918C7E28EB5418004A6704 /* Main.storyboard */; };
+		3B918C8E28EB5419004A6704 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B918C8028EB5419004A6704 /* PhoneNumberViewController.swift */; };
+		3B918C8F28EB5419004A6704 /* GetUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B918C8128EB5419004A6704 /* GetUserDataViewController.swift */; };
+		3B918C9028EB5419004A6704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B918C8228EB5419004A6704 /* AppDelegate.swift */; };
+		3B918C9128EB5419004A6704 /* ConfirmEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B918C8328EB5419004A6704 /* ConfirmEmailViewController.swift */; };
+		3B918C9328EB5419004A6704 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B918C8528EB5419004A6704 /* SceneDelegate.swift */; };
+		4CACC02F2CF1B9EA3D55F0D9 /* Pods_PayWingsOAuthSDK_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915D679ED6BB27CE7F48B544 /* Pods_PayWingsOAuthSDK_SampleApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3B46A39328E88354001FBDE5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3B1C05F828EB5E8F003F15BE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		3B46A36B28E87EB1001FBDE5 /* PayWingsOAuthSDK-SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PayWingsOAuthSDK-SampleApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B918C7628EB5418004A6704 /* ConfirmPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		3B918C7728EB5418004A6704 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B918C7828EB5418004A6704 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		3B918C7928EB5418004A6704 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		3B918C7A28EB5418004A6704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B918C7B28EB5418004A6704 /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		3B918C7D28EB5418004A6704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B918C7F28EB5418004A6704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B918C8028EB5419004A6704 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
+		3B918C8128EB5419004A6704 /* GetUserDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserDataViewController.swift; sourceTree = "<group>"; };
+		3B918C8228EB5419004A6704 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B918C8328EB5419004A6704 /* ConfirmEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmEmailViewController.swift; sourceTree = "<group>"; };
+		3B918C8428EB5419004A6704 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B918C8528EB5419004A6704 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		762B47EBEFF50D39700F1BB3 /* Pods-PayWingsOAuthSDK-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWingsOAuthSDK-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-PayWingsOAuthSDK-SampleApp/Pods-PayWingsOAuthSDK-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		7C3952AF6A77D6C6F124C8B0 /* Pods-PayWingsOAuthSDK-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWingsOAuthSDK-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-PayWingsOAuthSDK-SampleApp/Pods-PayWingsOAuthSDK-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		915D679ED6BB27CE7F48B544 /* Pods_PayWingsOAuthSDK_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayWingsOAuthSDK_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B46A36828E87EB1001FBDE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CACC02F2CF1B9EA3D55F0D9 /* Pods_PayWingsOAuthSDK_SampleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B46A36228E87EB0001FBDE5 = {
+			isa = PBXGroup;
+			children = (
+				3B918C7528EB5418004A6704 /* PayWingsOAuthSDK-SampleApp */,
+				3B46A36C28E87EB1001FBDE5 /* Products */,
+				3B46A39028E88353001FBDE5 /* Frameworks */,
+				B35A20E558FBB0852F0556D9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		3B46A36C28E87EB1001FBDE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B46A36B28E87EB1001FBDE5 /* PayWingsOAuthSDK-SampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B46A39028E88353001FBDE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				915D679ED6BB27CE7F48B544 /* Pods_PayWingsOAuthSDK_SampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B918C7528EB5418004A6704 /* PayWingsOAuthSDK-SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				3B918C7728EB5418004A6704 /* ViewController.swift */,
+				3B918C8028EB5419004A6704 /* PhoneNumberViewController.swift */,
+				3B918C7628EB5418004A6704 /* ConfirmPhoneNumberViewController.swift */,
+				3B918C7828EB5418004A6704 /* EmailViewController.swift */,
+				3B918C8328EB5419004A6704 /* ConfirmEmailViewController.swift */,
+				3B918C8128EB5419004A6704 /* GetUserDataViewController.swift */,
+				3B918C7928EB5418004A6704 /* AppData.swift */,
+				3B918C7B28EB5418004A6704 /* KeychainService.swift */,
+				3B918C7C28EB5418004A6704 /* LaunchScreen.storyboard */,
+				3B918C7E28EB5418004A6704 /* Main.storyboard */,
+				3B918C8228EB5419004A6704 /* AppDelegate.swift */,
+				3B918C8528EB5419004A6704 /* SceneDelegate.swift */,
+				3B1C05F828EB5E8F003F15BE /* Settings.bundle */,
+				3B918C8428EB5419004A6704 /* Info.plist */,
+				3B918C7A28EB5418004A6704 /* Assets.xcassets */,
+			);
+			path = "PayWingsOAuthSDK-SampleApp";
+			sourceTree = "<group>";
+		};
+		B35A20E558FBB0852F0556D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C3952AF6A77D6C6F124C8B0 /* Pods-PayWingsOAuthSDK-SampleApp.debug.xcconfig */,
+				762B47EBEFF50D39700F1BB3 /* Pods-PayWingsOAuthSDK-SampleApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B46A36A28E87EB1001FBDE5 /* PayWingsOAuthSDK-SampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B46A37F28E87EB4001FBDE5 /* Build configuration list for PBXNativeTarget "PayWingsOAuthSDK-SampleApp" */;
+			buildPhases = (
+				86DF03D74A5F7244210DD520 /* [CP] Check Pods Manifest.lock */,
+				3B46A36728E87EB1001FBDE5 /* Sources */,
+				3B46A36828E87EB1001FBDE5 /* Frameworks */,
+				3B46A36928E87EB1001FBDE5 /* Resources */,
+				3B46A39328E88354001FBDE5 /* Embed Frameworks */,
+				D3E393B9A7AF00C2A3686D89 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PayWingsOAuthSDK-SampleApp";
+			productName = "PayWingsOAuthSDK-TestApp";
+			productReference = 3B46A36B28E87EB1001FBDE5 /* PayWingsOAuthSDK-SampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B46A36328E87EB0001FBDE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					3B46A36A28E87EB1001FBDE5 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 3B46A36628E87EB0001FBDE5 /* Build configuration list for PBXProject "PayWingsOAuthSDK-SampleApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B46A36228E87EB0001FBDE5;
+			productRefGroup = 3B46A36C28E87EB1001FBDE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B46A36A28E87EB1001FBDE5 /* PayWingsOAuthSDK-SampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B46A36928E87EB1001FBDE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1C05F928EB5E8F003F15BE /* Settings.bundle in Resources */,
+				3B918C8D28EB5419004A6704 /* Main.storyboard in Resources */,
+				3B918C8A28EB5419004A6704 /* Assets.xcassets in Resources */,
+				3B918C8C28EB5419004A6704 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86DF03D74A5F7244210DD520 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PayWingsOAuthSDK-SampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3E393B9A7AF00C2A3686D89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayWingsOAuthSDK-SampleApp/Pods-PayWingsOAuthSDK-SampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayWingsOAuthSDK-SampleApp/Pods-PayWingsOAuthSDK-SampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayWingsOAuthSDK-SampleApp/Pods-PayWingsOAuthSDK-SampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B46A36728E87EB1001FBDE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B918C9128EB5419004A6704 /* ConfirmEmailViewController.swift in Sources */,
+				3B918C9028EB5419004A6704 /* AppDelegate.swift in Sources */,
+				3B918C8728EB5419004A6704 /* ViewController.swift in Sources */,
+				3B918C8828EB5419004A6704 /* EmailViewController.swift in Sources */,
+				3B918C8E28EB5419004A6704 /* PhoneNumberViewController.swift in Sources */,
+				3B918C9328EB5419004A6704 /* SceneDelegate.swift in Sources */,
+				3B918C8628EB5419004A6704 /* ConfirmPhoneNumberViewController.swift in Sources */,
+				3B918C8B28EB5419004A6704 /* KeychainService.swift in Sources */,
+				3B918C8928EB5419004A6704 /* AppData.swift in Sources */,
+				3B918C8F28EB5419004A6704 /* GetUserDataViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B918C7C28EB5418004A6704 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B918C7D28EB5418004A6704 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3B918C7E28EB5418004A6704 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B918C7F28EB5418004A6704 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B46A37D28E87EB4001FBDE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B46A37E28E87EB4001FBDE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B46A38028E87EB4001FBDE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C3952AF6A77D6C6F124C8B0 /* Pods-PayWingsOAuthSDK-SampleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87DGR2R982;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PayWingsOAuthSDK-SampleApp/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PayWings OAuth";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paywings.oauth.sdk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3B46A38128E87EB4001FBDE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762B47EBEFF50D39700F1BB3 /* Pods-PayWingsOAuthSDK-SampleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 87DGR2R982;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PayWingsOAuthSDK-SampleApp/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PayWings OAuth";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paywings.oauth.sdk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B46A36628E87EB0001FBDE5 /* Build configuration list for PBXProject "PayWingsOAuthSDK-SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B46A37D28E87EB4001FBDE5 /* Debug */,
+				3B46A37E28E87EB4001FBDE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B46A37F28E87EB4001FBDE5 /* Build configuration list for PBXNativeTarget "PayWingsOAuthSDK-SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B46A38028E87EB4001FBDE5 /* Debug */,
+				3B46A38128E87EB4001FBDE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B46A36328E87EB0001FBDE5 /* Project object */;
+}
