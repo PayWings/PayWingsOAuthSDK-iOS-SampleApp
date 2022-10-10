@@ -1,6 +1,6 @@
 //
 //  ConfirmPhoneNumberViewController.swift
-//  PayWingsOAuthSDK-TestApp
+//  PayWingsOAuthSDK-SampleApp
 //
 //  Created by Tjasa Jan on 01/10/2022.
 //
@@ -21,8 +21,6 @@ class ConfirmPhoneNumberViewController : UIViewController, SignInWithPhoneNumber
     @IBOutlet weak var ErrorMessage: UILabel!
     
     var callback = SignInWithPhoneNumberVerifyOtpCallback()
-    
-    var userEmail = ""
     
     
     override func viewDidLoad() {
@@ -54,8 +52,9 @@ class ConfirmPhoneNumberViewController : UIViewController, SignInWithPhoneNumber
     
     
     // SignInWithPhoneNumberVerifyOtpCallbackDelegate
-    func onShowEmailConfirmationScreen(email: String) {
-        userEmail = email
+    func onShowEmailConfirmationScreen(email: String, autoEmailSent: Bool) {
+        AppData.shared().userEmail = email
+        AppData.shared().emailSent = autoEmailSent
         hideLoading()
         performSegue(withIdentifier: "checkEmailVerified", sender: nil)
     }
@@ -72,7 +71,6 @@ class ConfirmPhoneNumberViewController : UIViewController, SignInWithPhoneNumber
     }
     
     func onSignInSuccessful(refreshToken: String, accessToken: String, accessTokenExpirationTime: Int64) {
-        debugPrint("ExpirationTime: " + accessTokenExpirationTime.description)
         AppData.shared().accessToken = accessToken
         AppData.shared().refreshToken = refreshToken
         hideLoading()
@@ -92,14 +90,5 @@ class ConfirmPhoneNumberViewController : UIViewController, SignInWithPhoneNumber
     }
     
     
-    
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "checkEmailVerified" {
-            guard let vc = segue.destination as? ConfirmEmailViewController else { return }
-            vc.email = userEmail
-        }
-    }
     
 }

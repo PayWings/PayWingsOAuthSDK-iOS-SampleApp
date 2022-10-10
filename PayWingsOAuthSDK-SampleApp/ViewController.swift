@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  PayWingsOAuthSDK-TestApp
+//  PayWingsOAuthSDK-SampleApp
 //
 //  Created by Tjasa Jan on 01/10/2022.
 //
@@ -18,9 +18,7 @@ class ViewController: UIViewController, IASKSettingsDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let version = Bundle(for: PayWingsOAuthClient.self).object(forInfoDictionaryKey:"CFBundleShortVersionString") as? String {
-            SdkVersion.text = "v" + version
-        }
+        SdkVersion.text = "v1.1.0"
     }
     
     

@@ -1,65 +1,56 @@
 //
-//  EmailViewController.swift
-//  PayWingsOAuthSDK-SampleApp
+//  ChangeEmailViewController.swift
+//  PayWingsOAuthSDK-TestApp
 //
-//  Created by Tjasa Jan on 01/10/2022.
+//  Created by Tjasa Jan on 10/10/2022.
 //
 
 import UIKit
 import PayWingsOAuthSDK
 
 
-class EmailViewController : UIViewController, RegisterUserCallbackDelegate {
+class ChangeEmailViewController : UIViewController, ChangeUnverifiedEmailCallbackDelegate {
     
     
-    @IBOutlet weak var FirstName: UITextField!
-    @IBOutlet weak var LastName: UITextField!
     @IBOutlet weak var Email: UITextField!
-    
     @IBOutlet weak var ErrorMessage: UILabel!
     
-    let callback = RegisterUserCallback()
-    
+    var callback = ChangeUnverifiedEmailCallback()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         
-        callback.delegate = self
-        
         ErrorMessage.isHidden = true
+        
+        callback.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        FirstName.becomeFirstResponder()
+        Email.becomeFirstResponder()
     }
     
     
-    @IBAction func onRegisterUser(_ sender: Any) {
+    @IBAction func onChangeEmail(_ sender: Any) {
         showLoading()
         ErrorMessage.isHidden = true
         self.view.endEditing(false)
         
-        PayWingsOAuthClient.instance()?.registerUser(firstName: FirstName.text ?? "", lastName: LastName.text ?? "", email: Email.text ?? "", callback: callback)
+        PayWingsOAuthClient.instance()?.changeUnverifiedEmail(email: Email.text ?? "", callback: callback)
     }
     
     
-    // RegisterUserCallbackDelegate
+    
+    // ChangeUnverifiedEmailCallbackDelegate
     func onShowEmailConfirmationScreen(email: String, autoEmailSent: Bool) {
         AppData.shared().userEmail = email
         AppData.shared().emailSent = autoEmailSent
         hideLoading()
-        performSegue(withIdentifier: "checkEmailVerified", sender: nil)
-    }
-    
-    func onSignInSuccessful(refreshToken: String, accessToken: String, accessTokenExpirationTime: Int64) {
-        AppData.shared().accessToken = accessToken
-        AppData.shared().refreshToken = refreshToken
-        hideLoading()
-        performSegue(withIdentifier: "getUserData", sender: nil)
+        self.navigationController?.transitionFromRightToLeft()
+        self.navigationController?.popViewController(animated: true)
     }
     
     func onUserSignInRequired() {
@@ -73,7 +64,20 @@ class EmailViewController : UIViewController, RegisterUserCallbackDelegate {
         ErrorMessage.isHidden = false
         hideLoading()
     }
+}
+
+
+
+
+extension UINavigationController {
     
-    
-    
+    public func transitionFromRightToLeft() {
+
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromRight
+        self.view.layer.add(transition, forKey: nil)
+    }
 }

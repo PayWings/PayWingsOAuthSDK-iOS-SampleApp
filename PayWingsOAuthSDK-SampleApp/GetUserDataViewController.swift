@@ -1,6 +1,6 @@
 //
 //  GetUserDataViewController.swift
-//  PayWingsOAuthSDK-TestApp
+//  PayWingsOAuthSDK-SampleApp
 //
 //  Created by Tjasa Jan on 03/10/2022.
 //

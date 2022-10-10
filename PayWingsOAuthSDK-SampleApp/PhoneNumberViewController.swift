@@ -1,6 +1,6 @@
 //
 //  PhoneNumberViewController.swift
-//  PayWingsOAuthSDK-TestApp
+//  PayWingsOAuthSDK-SampleApp
 //
 //  Created by Tjasa Jan on 01/10/2022.
 //

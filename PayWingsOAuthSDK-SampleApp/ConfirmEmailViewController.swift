@@ -1,6 +1,6 @@
 //
 //  ConfirmEmailViewController.swift
-//  PayWingsOAuthSDK-TestApp
+//  PayWingsOAuthSDK-SampleApp
 //
 //  Created by Tjasa Jan on 01/10/2022.
 //
@@ -9,24 +9,30 @@ import UIKit
 import PayWingsOAuthSDK
 
 
-class ConfirmEmailViewController : UIViewController, CheckEmailVerifiedCallbackDelegate {
+class ConfirmEmailViewController : UIViewController, CheckEmailVerifiedCallbackDelegate, SendNewVerificationEmailCallbackDelegate {
     
-    
-    var email: String!
     
     @IBOutlet weak var CheckEmailText: UILabel!
     @IBOutlet weak var ErrorMessage: UILabel!
+    @IBOutlet weak var ChangeEmailButton: UIButton!
     
-    var callback = CheckEmailVerifiedCallback()
+    var checkEmailCallback = CheckEmailVerifiedCallback()
+    var resendEmailCallback = SendNewVerificationEmailCallback()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ErrorMessage.isHidden = true
-        CheckEmailText.text = "Email verification required: " + email
         
-        callback.delegate = self
+        checkEmailCallback.delegate = self
+        resendEmailCallback.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        CheckEmailText.text = "Email verification required: " + AppData.shared().userEmail
     }
     
     
@@ -34,10 +40,25 @@ class ConfirmEmailViewController : UIViewController, CheckEmailVerifiedCallbackD
         showLoading()
         ErrorMessage.isHidden = true
         
-        PayWingsOAuthClient.instance()?.checkEmailVerified(callback: callback)
+        PayWingsOAuthClient.instance()?.checkEmailVerified(callback: checkEmailCallback)
     }
     
     
+    @IBAction func onResendEmail(_ sender: Any) {
+        showLoading()
+        ErrorMessage.isHidden = true
+        
+        PayWingsOAuthClient.instance()?.sendNewVerificationEmail(callback: resendEmailCallback)
+    }
+    
+    @IBAction func onChangeEmail(_ sender: Any) {
+        ErrorMessage.isHidden = true
+        
+        performSegue(withIdentifier: "changeEmail", sender: nil)
+    }
+    
+    
+    // CheckEmailVerifiedCallbackDelegate
     func onEmailNotVerified() {
         ErrorMessage.text = "Email not verified"
         ErrorMessage.isHidden = false
@@ -45,9 +66,6 @@ class ConfirmEmailViewController : UIViewController, CheckEmailVerifiedCallbackD
     }
     
     func onSignInSuccessful(refreshToken: String, accessToken: String, accessTokenExpirationTime: Int64) {
-        debugPrint("AccessToken: " + accessToken)
-        debugPrint("RefreshToken: " + refreshToken)
-        debugPrint("ExpirationTime: " + accessTokenExpirationTime.description)
         AppData.shared().accessToken = accessToken
         AppData.shared().refreshToken = refreshToken
         hideLoading()
@@ -63,6 +81,13 @@ class ConfirmEmailViewController : UIViewController, CheckEmailVerifiedCallbackD
     func onError(error: PayWingsOAuthSDK.OAuthErrorCode, errorMessage: String?) {
         ErrorMessage.text = errorMessage ?? error.description
         ErrorMessage.isHidden = false
+        hideLoading()
+    }
+    
+    // SendNewVerificationEmailCallbackDelegate
+    func onShowEmailConfirmationScreen(email: String, autoEmailSent: Bool) {
+        AppData.shared().userEmail = email
+        AppData.shared().emailSent = autoEmailSent
         hideLoading()
     }
     

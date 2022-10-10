@@ -21,6 +21,7 @@
 		3B918C9028EB5419004A6704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B918C8228EB5419004A6704 /* AppDelegate.swift */; };
 		3B918C9128EB5419004A6704 /* ConfirmEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B918C8328EB5419004A6704 /* ConfirmEmailViewController.swift */; };
 		3B918C9328EB5419004A6704 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B918C8528EB5419004A6704 /* SceneDelegate.swift */; };
+		3B950B7E28F49579000BF636 /* ChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B950B7D28F49578000BF636 /* ChangeEmailViewController.swift */; };
 		4CACC02F2CF1B9EA3D55F0D9 /* Pods_PayWingsOAuthSDK_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915D679ED6BB27CE7F48B544 /* Pods_PayWingsOAuthSDK_SampleApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		3B918C8328EB5419004A6704 /* ConfirmEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmEmailViewController.swift; sourceTree = "<group>"; };
 		3B918C8428EB5419004A6704 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B918C8528EB5419004A6704 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B950B7D28F49578000BF636 /* ChangeEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewController.swift; sourceTree = "<group>"; };
 		762B47EBEFF50D39700F1BB3 /* Pods-PayWingsOAuthSDK-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWingsOAuthSDK-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-PayWingsOAuthSDK-SampleApp/Pods-PayWingsOAuthSDK-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		7C3952AF6A77D6C6F124C8B0 /* Pods-PayWingsOAuthSDK-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWingsOAuthSDK-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-PayWingsOAuthSDK-SampleApp/Pods-PayWingsOAuthSDK-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		915D679ED6BB27CE7F48B544 /* Pods_PayWingsOAuthSDK_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayWingsOAuthSDK_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 				3B918C7628EB5418004A6704 /* ConfirmPhoneNumberViewController.swift */,
 				3B918C7828EB5418004A6704 /* EmailViewController.swift */,
 				3B918C8328EB5419004A6704 /* ConfirmEmailViewController.swift */,
+				3B950B7D28F49578000BF636 /* ChangeEmailViewController.swift */,
 				3B918C8128EB5419004A6704 /* GetUserDataViewController.swift */,
 				3B918C7928EB5418004A6704 /* AppData.swift */,
 				3B918C7B28EB5418004A6704 /* KeychainService.swift */,
@@ -249,6 +252,7 @@
 				3B918C9028EB5419004A6704 /* AppDelegate.swift in Sources */,
 				3B918C8728EB5419004A6704 /* ViewController.swift in Sources */,
 				3B918C8828EB5419004A6704 /* EmailViewController.swift in Sources */,
+				3B950B7E28F49579000BF636 /* ChangeEmailViewController.swift in Sources */,
 				3B918C8E28EB5419004A6704 /* PhoneNumberViewController.swift in Sources */,
 				3B918C9328EB5419004A6704 /* SceneDelegate.swift in Sources */,
 				3B918C8628EB5419004A6704 /* ConfirmPhoneNumberViewController.swift in Sources */,

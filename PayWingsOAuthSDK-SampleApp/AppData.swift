@@ -31,4 +31,7 @@ class AppData {
     
     var accessToken: String?
     var refreshToken: String?
+    
+    var userEmail = ""
+    var emailSent = false
 }

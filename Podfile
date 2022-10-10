@@ -7,7 +7,7 @@ target 'PayWingsOAuthSDK-SampleApp' do
 
   # Pods for PayWingsOAuthSDK-SampleApp
 
-  pod 'PayWingsOAuthSDK', '1.0.0'
+  pod 'PayWingsOAuthSDK', '1.1.0'
   pod 'InAppSettingsKit', '3.3.6'
 
 
